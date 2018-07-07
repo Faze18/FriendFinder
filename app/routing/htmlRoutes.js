@@ -7,10 +7,10 @@ module.exports = function(app) {
     });	
     // catch all route to take you home! That's a good place to be. 
     app.get("/", function(req, res) {
-		res.sendFile(path.join(__dirname+ "../public/home.html"));
+		res.sendFile(path.join(__dirname + "../public/home.html"));
 	});
     app.get("/:any", function(req, res) {
-		res.sendFile(path.join(__dirname+ "../public/home.html"));
+		res.sendFile(path.join(__dirname + "../public/home.html"));
 	});
 
 };

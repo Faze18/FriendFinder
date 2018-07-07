@@ -1,0 +1,293 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Meet Your Mate</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body id= "body">
+    <div class="container">
+        <div class="jumbotron">
+
+            <h1 class=""> Friend Finder </h1>
+
+
+            <h3> Because you're never alone when you're filling out surveys. </h3>
+        </div>
+        <h3> Questions</h3>
+
+        <h4>Name</h4>
+        <input type="text" name="" id="name" class="form-control" required>
+        <h4>Link to Image (Required)</h4>
+        <input type="text" name="" id="photo" class="form-control" required>
+        <hr>
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+        <h4>How much do you play video games? </h4>
+        <questions id="forReset">
+            <select data-placeholder="" class="selctions" id="1">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 2</strong>
+            </h3>
+            <h4>Do you like loud music?</h4>
+            <select data-placeholder="" class="selctions" id="2">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 3</strong>
+            </h3>
+            <h4>How much do you like people with face tattoos?</h4>
+            <select data-placeholder="" class="selctions" id="3">
+                <option value=""></option>
+                <option value="1">1 (nope)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Oh yea!)</option>
+            </select>
+
+            <h3>
+                <strong>Question 4</strong>
+            </h3>
+            <h4>I am not easily offended:</h4>
+            <select data-placeholder="" class="selctions" id="4">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 5</strong>
+            </h3>
+            <h4>I like football and will let you watch it whenever you want.</h4>
+            <select data-placeholder="" class="selctions" id="5">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 6</strong>
+            </h3>
+            <h4>I like to stay up very late.</h4>
+            <select data-placeholder="" class="selctions" id="6">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 7</strong>
+            </h3>
+            <h4>I value consistancy over style</h4>
+            <select data-placeholder="" class="selctions" id="7">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 8</strong>
+            </h3>
+            <h4>Work later, lets have fun.</h4>
+            <select data-placeholder="" class="selctions" id="8">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 9</strong>
+            </h3>
+            <h4>How much you like pizza?</h4>
+            <select data-placeholder="" class="selctions" id="9">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>
+                <strong>Question 10</strong>
+            </h3>
+            <h4>Seriously, should I get a face tattoo? I think they are cool.</h4>
+            <select data-placeholder="" class="selctions" id="10">
+                <option value=""></option>
+                <option value="1">1 (What would people think)</option>
+                <option value="2">2 (take a break on the Post Malone)</option>
+                <option value="3">3 (why are you acting weird!?)</option>
+                <option value="4">4 (only if it's cool)</option>
+                <option value="5">5 (Dude, I don't care)</option>
+            </select>
+        </questions>
+        <br>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"> Find My Friends
+        </button>
+
+
+    </div>
+
+    <!-- ************************************************** -->
+    <!-- **************MODAL FOR SUBMIT BUTTON************* -->
+    <!-- ************************************************** -->
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal -->
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div style="color:darkblue; background-color: beige; height: 700px; 
+        width:700px;position: absolute;left: 50%; top: 50%;    margin-left: -350px;
+        margin-top: -350px;">
+            <span class="close" id ="close">&times;</span>
+        <div style = "align-content: center; align-items:center; text-align: center">
+            <h1 class="modal-title" style = "align-content: center; align-items:center">Found Your Friend!</h1>
+            <h2 id = "winner"></h2>
+            <div id = "pictureWinner"></div>
+            <p>modal test</p>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="friend-modal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="winner"></div>
+                    <div id="winnerPicture"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <br>
+    </div>
+    </div>
+
+    <!-- ************************************************** -->
+    <!-- **************Script to get friend**************** -->
+    <!-- ************************************************** -->
+
+
+    <script type="text/javascript">
+        var divClone = $("#body").clone(); 
+
+        $( '#submit' ).on( "click", function () {
+            var validEntry;
+            if ( $( "#name" ).val().trim() === '' ) {
+                alert( 'Enter a name to unlock friends' );
+            }
+            else if ( $( "#photo" ).val().trim() === '' ) {
+                alert( 'Submit a photo link to unlock friends' );
+            }
+            else {
+                var ansArr = [];
+                for ( i = 1; i < 11; i++ ) {
+                    ansArr.push( parseInt( $( '#' + i ).val().substring( 0, 1 ) ) );
+                }
+                var addPerson =
+                    {
+                        name: $( "#name" ).val().trim(),
+                        photo: $( "#photo" ).val().trim(),
+                        scores: ansArr
+                    };
+                var currentURL = window.location.origin;
+                $.post( currentURL + "/api/friends", addPerson,
+                    function ( data ) { } );
+                $.ajax( { url: currentURL + "/api/friends", method: "GET" } ).done( function ( res ) {
+
+                    var selectedFriend;
+                    var currentBest = 100;
+                    var differenceArray = [];
+                    for ( i = 0; i < res.length - 1; i++ ) {
+                        for ( j = 0; j < 10; j++ ) {
+                            var currentDifference = addPerson.scores[j] - res[i].scores[j];
+                            differenceArray.push( Math.abs( currentDifference ) );
+                        }
+                        var difference = differenceArray.reduce( add, 0 );
+                        if ( difference < currentBest ) {
+                            selectedFriend = res[i];
+                            currentBest = difference;
+                            differenceArray = [];
+                        }
+                        else {
+                            differenceArray = [];
+                        }
+
+                    }
+                    console.log(selectedFriend);
+                    var friendName = '<h4>' + selectedFriend.name + '<h4>';
+                    var friendPic = '<img width="400px" src=' + selectedFriend.photo + '>';
+                    $( '#myModal' ).modal( 'show' );
+                    $( '#winner' ).html( friendName );
+                    $( '#pictureWinner' ).html( friendPic );
+                    $( '#close' ).on( "click", function () {
+                        $( '#myModal' ).modal( 'hide' );
+                        $("#body").replaceWith(divClone.clone()); 
+
+                    } );
+
+                } );
+            }
+            return false;
+        } );
+        function add( a, b ) {
+            return a + b;
+        };
+    </script>
+</body>
+
+</body>
+
+</html>

@@ -221,6 +221,8 @@
 
 
     <script type="text/javascript">
+    run();
+    function run(){
         var divClone = $("#body").clone(); 
 
         $( '#submit' ).on( "click", function () {
@@ -269,12 +271,13 @@
                     console.log(selectedFriend);
                     var friendName = '<h4>' + selectedFriend.name + '<h4>';
                     var friendPic = '<img width="400px" src=' + selectedFriend.photo + '>';
-                    $( '#myModal' ).modal( 'show' );
+                    $( '#myModal' ).show();
                     $( '#winner' ).html( friendName );
                     $( '#pictureWinner' ).html( friendPic );
                     $( '#close' ).on( "click", function () {
                         $( '#myModal' ).modal( 'hide' );
                         $("#body").replaceWith(divClone.clone()); 
+                        run();
 
                     } );
 
@@ -285,6 +288,7 @@
         function add( a, b ) {
             return a + b;
         };
+    }
     </script>
 </body>
 
